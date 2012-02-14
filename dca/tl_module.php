@@ -19,8 +19,8 @@
  * Software Foundation website at http://www.gnu.org/licenses/.
  *
  * PHP version 5
- * @copyright  Andreas Schempp 2009
- * @author     Andreas Schempp <andreas@schempp.ch>
+ * @copyright  Marcel Hadorn 2009
+ * @author     Marcel Hadorn <marcel@duotones.ch>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
  */
@@ -29,5 +29,20 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['ajaxform'] = '{title_legend},name,headline,type;{include_legend},form;{text_legend},richtext;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['module_text'] = '{title_legend},name,headline,type;{text_legend},text;{textimage_legend},textAddImage;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+
+/**
+ * Fields
+ */
+$GLOBALS['TL_DCA']['tl_module']['fields']['text'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_module']['text'],
+	'exclude'                 => true,
+	'search'                  => true,
+	'inputType'               => 'textarea',
+	'eval'                    => array('mandatory'=>true, 'rte'=>'tinyMCE', 'helpwizard'=>true),
+	'explanation'             => 'insertTags'
+);
+ 
+$GLOBALS['TL_DCA']['tl_module']['palettes']['ajaxform'] = '{title_legend},name,headline,type;{include_legend},form;{text_legend},text;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 

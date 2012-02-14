@@ -24,12 +24,15 @@
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
  */
-
+ /**
+ * @edited	   Marcel Hadorn <me@marcelhadorn.com>
+ */
 
 /**
  * Frontend modules
  */
 $GLOBALS['FE_MOD']['application']['ajaxform'] = 'AjaxForm';
+$GLOBALS['FE_MOD']['application']['contenttext'] = 'ContentText';
 
 
 /**

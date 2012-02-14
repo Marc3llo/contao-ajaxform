@@ -20,7 +20,7 @@
  *
  * PHP version 5
  * @copyright  Andreas Schempp 2009
- * @author     Andreas Schempp <andreas@schempp.ch>
+ * @author     Marcel Hadorn <me@marcelhadorn.com>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
  */
@@ -30,3 +30,9 @@
  * Frontend modules
  */
 $GLOBALS['TL_LANG']['FMD']['ajaxform'] = array('Form with Ajax', 'adds a form to the page and tries to validate it using ajax.');
+
+/**
+ * Fields
+ */
+$GLOBALS['TL_LANG']['tl_module']['text'] = array('Text', 'Please enter the text (you can use HTML tags).');
+

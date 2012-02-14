@@ -20,7 +20,7 @@
  *
  * PHP version 5
  * @copyright  Andreas Schempp 2009
- * @author     Andreas Schempp <andreas@schempp.ch>
+ * @author     Marcel Hadorn <me@marcelhadorn.com>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
  */
@@ -30,4 +30,9 @@
  * Frontend modules
  */
 $GLOBALS['TL_LANG']['FMD']['ajaxform'] = array('Formular mit Ajax', 'Fügt ein Formular auf der Seite ein, welches per Ajax geprüft und bestätigt wird.');
+
+/**
+ * Fields
+ */
+$GLOBALS['TL_LANG']['tl_module']['text'] = array('Text', 'Bitte geben Sie den Text ein. HTML-Tags sind erlaubt.');
 
